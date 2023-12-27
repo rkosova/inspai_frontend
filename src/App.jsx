@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import NavBar from './components/Navbar';
 import Heading from "./components/Header"
 import GettingStartedGuide from './components/Guide';
 import Information from './components/Info';
 import TrainSection from './components/Train';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -70,6 +72,7 @@ const trainStepsData = {
   
   return (
     <div>
+      <NavBar/>
       <Heading heading={sectionOne.heading} text={sectionOne.text}/>
 
       <GettingStartedGuide guideData={guideData}/>
@@ -83,6 +86,8 @@ const trainStepsData = {
        text={trainStepsData.text}
       trainStepsData={trainStepsData}
       />
+      <Footer />
+
     </div>
   )
 }
