@@ -1,0 +1,70 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #BA324F;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #F5D547;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+*/
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+
+.topnav a.special-font {
+    font-size: 40px;
+    color: #F5D547;
+    font-family: 'Diphylleia', serif;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.topnav-right .about-link {
+    text-decoration: underline; /* Add underline */
+  }
+  
+  /* Style the Train Model link */
+  .topnav-right .train-link {
+    text-decoration: underline; /* Add underline */
+  }
+  
+  .topnav-right .login-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F5D547; /* Change the background color as needed */
+    color: #BA324F; /* Text color */
+    text-decoration: none;
+    border-radius: 20px; /* Adjust the border-radius to control the roundness */
+    transition: background-color 0.3s; /* Add a smooth transition for the background color */
+  
+    /* Additional styles for better appearance */
+    text-align: center;
+  }
+  
+  /* Change the background color on hover */
+  .topnav-right .login-link:hover {
+    background-color: white; /* Change the hover background color as needed */
+  }
+
+  /* Style the Sign Up link */
+  .topnav-right .signup-link {
+    text-decoration: underline; /* Add underline */
+  }

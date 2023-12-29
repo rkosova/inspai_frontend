@@ -8,7 +8,42 @@ import Footer from './components/Footer';
 
 
 const App = () => {
+  const [uploadedImage, setUploadedImage] = useState(null);
+  
 
+  const handleImageUpload = async (event) => {
+    const file = event.target.files[0];
+
+    // Simulate uploading to a server (you can replace this with an actual API call in the future)
+    // For now, just set the uploaded image for testing purposes
+    setUploadedImage(URL.createObjectURL(file));
+
+    // Simulate AI processing (replace this with actual AI integration)
+
+    //Simulate searching with AI
+    await handleGenerateClick(file)
+    
+  };
+  
+  const handleGenerateClick = async (imageFile) => {
+    if (uploadedImage){
+    // Simulate asynchronous AI processing (e.g., waiting for a response)
+    console.log(imageFile)
+    console.log('Simulating AI processing...');
+    await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate a 2-second delay
+
+    // Log the result (replace with actual handling when AI integration is ready)
+    console.log('AI processing complete. Result:', imageFile.name);
+    } else  {"Please upload"}
+  };
+
+const handleTrainClick = () => {
+  //Future AI training logic will be implemented here
+  console.log("Training..")
+}
+
+
+//VARIABLES FOR PLAIN TEXT
   //This is for the first parts of the website Header.jsx
   const sectionOne = {
     heading: "Find Inspiration with the Power of AI!",
@@ -42,6 +77,7 @@ const App = () => {
     ]
   };
 
+
 // This is for the information about our model Info.jsx
   const contentData = {
     howItWorks: {
@@ -68,12 +104,19 @@ const trainStepsData = {
   ],
 };
 
+
   
   
   return (
     <div>
+    
       <NavBar/>
       <Heading heading={sectionOne.heading} text={sectionOne.text}/>
+
+      <input type="file" onChange={handleImageUpload} />
+      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
+      
+      <button onClick={handleGenerateClick}>Search</button>
 
       <GettingStartedGuide guideData={guideData}/>
 
@@ -86,7 +129,11 @@ const trainStepsData = {
        text={trainStepsData.text}
       trainStepsData={trainStepsData}
       />
+      <button onClick={handleTrainClick}>Train</button>
       <Footer />
+        
+    
+ 
 
     </div>
   )
