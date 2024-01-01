@@ -11,7 +11,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 
@@ -32,12 +32,12 @@
 }
 
 .topnav-right .about-link {
-    text-decoration: underline; /* Add underline */
+    text-decoration: none; /* Add underline */
   }
   
   /* Style the Train Model link */
   .topnav-right .train-link {
-    text-decoration: underline; /* Add underline */
+    text-decoration: none; /* Add underline */
   }
   
   .topnav-right .login-link {
@@ -60,5 +60,5 @@
 
   /* Style the Sign Up link */
   .topnav-right .signup-link {
-    text-decoration: underline; /* Add underline */
+    text-decoration: none; /* Add underline */
   }

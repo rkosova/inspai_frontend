@@ -47,7 +47,8 @@ const handleTrainClick = () => {
   //This is for the first parts of the website Header.jsx
   const sectionOne = {
     heading: "Find Inspiration with the Power of AI!",
-    text: "Upload images to find and create boards that match the same mood, style, or content as your original image."
+    text: "Upload images to find and create boards that match the same mood, style, or content as your original image.",
+    note: "Login or create account for limitless usage."
   }
 
   //This is for the user guide Guide.jsx
@@ -56,24 +57,19 @@ const handleTrainClick = () => {
     instructions: [
       {
         id: 1,
-        title: "Step 1: Drag and drop an image or click <strong>+</strong> sign to upload.",
+        title: "Drag and drop an image or click <strong>+</strong> sign to upload.",
         
       },
       {
         id: 2,
-        title: "Step 2: Click the 'Generate' button.",
+        title: "Click the 'Generate' button.",
         
       },
       {
         id: 3,
-        title: "Step 3: Explore visually similar images based on style.",
+        title: "Explore visually similar images based on style.",
         
       },
-      {
-        id: 4,
-        title: "<strong>Note</strong> Login or create account for limitless usage."
-      }
-
     ]
   };
 
@@ -112,19 +108,22 @@ const trainStepsData = {
     
       <NavBar/>
       <div className='main'>
-      <Heading heading={sectionOne.heading} text={sectionOne.text}/>
-      
-      <div className='guide'><GettingStartedGuide guideData={guideData}/></div>
+      <Heading heading={sectionOne.heading} text={sectionOne.text} note={sectionOne.note}/>
+
+      <div className='guide'>
+        <GettingStartedGuide guideData={guideData}/>
+      </div>
       
 
       <div className='handle-upload'>
-      <input type="file" onChange={handleImageUpload} />
-      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
-      
-      <button onClick={handleGenerateClick}>Search</button>
-      </div>
 
-      
+       <input  className='card' type="file" onChange={handleImageUpload} /> <i class="fas fa-plus"></i>
+      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
+       
+      </div>
+      <div className='search-button'>
+      <button className="search" onClick={handleGenerateClick}>Search</button>
+      </div>
 
       {Object.keys(contentData).map((key) => (
         <Information key={key} {...contentData[key]} />
