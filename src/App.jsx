@@ -111,14 +111,20 @@ const trainStepsData = {
     <div>
     
       <NavBar/>
+      <div className='main'>
       <Heading heading={sectionOne.heading} text={sectionOne.text}/>
+      
+      <div className='guide'><GettingStartedGuide guideData={guideData}/></div>
+      
 
+      <div className='handle-upload'>
       <input type="file" onChange={handleImageUpload} />
       {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
       
       <button onClick={handleGenerateClick}>Search</button>
+      </div>
 
-      <GettingStartedGuide guideData={guideData}/>
+      
 
       {Object.keys(contentData).map((key) => (
         <Information key={key} {...contentData[key]} />
@@ -130,6 +136,7 @@ const trainStepsData = {
       trainStepsData={trainStepsData}
       />
       <button onClick={handleTrainClick}>Train</button>
+      </div>
       <Footer />
         
     

@@ -3,6 +3,49 @@
 body {
     background-color: #BA324F; 
     font-family: 'Arial', sans-serif;
-    
+    color: #FFF;
   }
+
+h2,h3{
+  color: #F5D547;
+}
+
+ /* Main content */
+
+.main{
+  margin: auto;
+  max-width: 1440px;
+}
+
+/* HEADER COMPONENT */
+
+  /* Getting the content to center*/
+.header-container {
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.main-heading{
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.paragraph-text {
+  padding-top: 20px;
+  font-size: 20px;
+}
+/* GUIDE COMPONENT */
+
+.guide{
+  margin:100px 0 100px 0;
+}
+
+
+
+/* UPLOAD IN APP.JSX */
+
+.handle-upload{
+  margin:100px 0 100px 0;
+
+}
   

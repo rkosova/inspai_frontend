@@ -1,8 +1,9 @@
+
 const Heading = ( {heading, text}) => {
     return (
-    <div>
-         <h1>{heading}</h1>
-         <p>{text}</p>
+    <div className="header-container">
+         <h1 className="main-heading">{heading}</h1>
+         <p className="paragraph-text">{text}</p>
     </div>
     )
 }
