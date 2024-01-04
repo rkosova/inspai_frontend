@@ -1,7 +1,7 @@
 
 const TrainSection = ({ heading, text, trainStepsData }) => {
     return (
-      <div>
+      <div className="train-section">
         <h4>{heading}</h4>
         <p>{text}</p>
         <ul>

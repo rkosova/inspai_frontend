@@ -66,74 +66,66 @@ h2,h3{
 
 /* UPLOAD IN APP.JSX */
 
- .handle-upload {
 
+.handle-upload {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
-
   height: 25vh;
 
-} 
+  background-image: url('../assets/backgrouncover.png');
 
- 
-.handle-upload i{
-  color: black;
+  background-repeat: no-repeat;
 
-  font-size: 30px;
-  
+  background-position: center center;
+
+  background-size: cover;
 }
 
 
 
 .card {
-
-
   color: black;
-
   width: 200px;
-
   height: 300px;
-
   margin: 0 10px;
-
   border-radius: 10px;
-
   background-color: white;
-
   display: flex;
-
+  flex-direction: column;
   justify-content: center;
-
   align-items: center;
-
+  position: relative;
 }
 
- 
+.card input {
+  display: none; /* Hide the actual file input */
+}
+
+.card i {
+  color: #BA324F;
+  font-size: 60px;
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  margin-right: 10px;
+}
+
+.handle-upload img {
+  max-width: 100%; /* Set maximum width to 100% of the container */
+  max-height: 100%; /* Set maximum height to 100% of the container */
+}
 
 .card:hover {
-
   cursor: pointer;
+}
 
-  background-color: #f2f2f2;
-
-} 
 
 
 .search-button {
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
-
 
 } 
 
@@ -145,60 +137,45 @@ h2,h3{
   color: #BA324F; 
   font-size: 20px; 
   border: none;
+  margin-top: 80px;
+
+
 
 
 }
 
  
-
 .search:hover {
-
   cursor: pointer;
-
   background-color: #f2f2f2;
 
 }
 
-/* .handle-upload i {
 
+/* INFO COMPONENT */
+
+.info h3{
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.info p{
+  font-size: 20px;
+}
+
+
+/* TRAIN COMPONENT */
+
+.train-section{
+  text-align: center;
+  padding-top: 40px;
+}
+
+.train-section h4{
   font-size: 50px;
-
-  color: red;
-
-  margin-left: 10px;
-
-  cursor: pointer;
-
+  font-family: 'Roboto', sans-serif;
 }
 
-.handle-upload {
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  justify-content: center;
-
-  height: 50vh;
-
-  padding: 0 20px;
-
+.train-section p{
+  font-size: 20px;
 }
-
- 
-
-.handle-upload input {
-
-  flex: 1;
-
-  border: none;
-
-  outline: none;
-
-  font-size: 16px;
-
-} */
-
- 

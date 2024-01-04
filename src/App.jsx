@@ -113,17 +113,20 @@ const trainStepsData = {
       <div className='guide'>
         <GettingStartedGuide guideData={guideData}/>
       </div>
-      
 
       <div className='handle-upload'>
-
-       <input  className='card' type="file" onChange={handleImageUpload} /> <i class="fas fa-plus"></i>
-      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
-       
+        <label className='card'>
+        <input type="file" onChange={handleImageUpload} />
+        <i class="fa-solid fa-plus"></i></label>
+        {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
       </div>
+
+      
+
+
       <div className='search-button'>
       <button className="search" onClick={handleGenerateClick}>Search</button>
-      </div>
+      </div> 
 
       {Object.keys(contentData).map((key) => (
         <Information key={key} {...contentData[key]} />
@@ -140,6 +143,12 @@ const trainStepsData = {
         
     
  
+      {/* <div className='handle-upload'>
+
+       <input  className='card' type="file" onChange={handleImageUpload} /> <i class="fa-solid fa-plus"></i>
+      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
+       
+  </div>*/}
 
     </div>
   )
