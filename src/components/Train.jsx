@@ -1,16 +1,16 @@
 
 const TrainSection = ({ heading, text, trainStepsData }) => {
     return (
-      <div className="train-section">
-        <h4>{heading}</h4>
+      <div>
+        <h2>{heading}</h2>
         <p>{text}</p>
-        <ul>
+        <ol>
           {trainStepsData.steps.map(trainstep => (
             <li key={trainstep.id}>
               <p>{trainstep.step}</p>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     );
   };

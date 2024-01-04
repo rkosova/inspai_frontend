@@ -22,6 +22,7 @@ h2,h3{
   /* Getting the content to center*/
 .header-container {
   text-align: center;
+  border-bottom: solid 1px #F5D547;
 }
 
 /* Style the links inside the navigation bar */
@@ -58,8 +59,10 @@ h2,h3{
 }
 
 .guide{
-  margin:50px 0 50px 0;
+  margin:140px 0 50px 0;
   font-size: 20px;
+
+  
 }
 
 
@@ -72,16 +75,17 @@ h2,h3{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 25vh;
-
+  height: 35vh;
   background-image: url('../assets/backgrouncover.png');
-
   background-repeat: no-repeat;
-
   background-position: center center;
-
   background-size: cover;
 }
+
+.handle-upload.uploaded {
+  background-image: none; /* Hide the background image when there's an uploaded image */
+}
+
 
 
 
@@ -121,7 +125,7 @@ h2,h3{
 
 
 
-.search-button {
+.search-button, .train-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +133,7 @@ h2,h3{
 
 } 
 
-.search {
+.search, .train {
   border-radius: 25px;
   width: 200px; 
   height: 50px; 
@@ -139,13 +143,10 @@ h2,h3{
   border: none;
   margin-top: 80px;
 
-
-
-
 }
 
  
-.search:hover {
+.search:hover, .train:hover {
   cursor: pointer;
   background-color: #f2f2f2;
 
@@ -154,9 +155,13 @@ h2,h3{
 
 /* INFO COMPONENT */
 
+.info-section{
+  margin: 100px 0 0 0 ;
+}
+
 .info h3{
   font-size: 25px;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .info p{
@@ -167,15 +172,100 @@ h2,h3{
 /* TRAIN COMPONENT */
 
 .train-section{
-  text-align: center;
+
   padding-top: 40px;
 }
 
-.train-section h4{
+.train-section h2{
   font-size: 50px;
   font-family: 'Roboto', sans-serif;
 }
 
 .train-section p{
   font-size: 20px;
+}
+
+.train-section ol {
+
+  list-style-type: none;
+  counter-reset: my-counter;
+  margin: 50px 0 50px 0;
+
+}
+
+.train-section li::before {
+
+  content: "▼ ";
+  counter-increment: my-counter;
+  font-weight: bold;
+  color: #F5D547;
+  font-size: 25px;
+}
+
+.handle-upload2, .handle-upload3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+
+}
+
+.handle-upload2.uploaded , .handle-upload3.uploaded {
+  background-image: none; /* Hide the background image when there's an uploaded image */
+}
+
+
+
+.card2, .card3 {
+  color: black;
+  width: 200px;
+  height: 300px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card2 input, .card3 input {
+  display: none; /* Hide the actual file input */
+}
+
+.card2 i, .card3 i {
+  color: #BA324F;
+  font-size: 60px;
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  margin-right: 10px;
+}
+
+.handle-upload2 img, .handle-upload3 img {
+  max-width: 100%; /* Set maximum width to 100% of the container */
+  max-height: 100%; /* Set maximum height to 100% of the container */
+}
+
+.card2:hover, .card3:hover {
+  cursor: pointer;
+}
+
+
+.train-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.train-upload .card2{
+  margin-right: 200px;
+}
+
+
+/* FOOTER COMPONENT */
+
+footer{
+  border-top: solid 1px#F5D547;
+  margin: 100px 0 50px 0;
 }

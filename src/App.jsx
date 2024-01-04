@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 const App = () => {
   const [uploadedImage, setUploadedImage] = useState(null);
   
-
+  //Reset button for the image?
   const handleImageUpload = async (event) => {
     const file = event.target.files[0];
 
@@ -95,8 +95,8 @@ const trainStepsData = {
   heading: 'Train Our AI Model Here',
   text: 'By contributing your images, you play a vital role in enhancing the capabilities of our AI. Your unique styles help train the model to recognize a diverse range of visual elements',
   steps: [
-    { id: 1, step: 'Step 1: Drag and drop or Upload an image that showcases a unique style.' },
-    { id: 2, step: 'Step 2: Press “Train” button to train our model' },
+    { id: 1, step: 'Drag and drop or Upload an image that showcases a unique style.' },
+    { id: 2, step: 'Press “Train” button to train our model' },
   ],
 };
 
@@ -113,13 +113,14 @@ const trainStepsData = {
       <div className='guide'>
         <GettingStartedGuide guideData={guideData}/>
       </div>
-
-      <div className='handle-upload'>
-        <label className='card'>
+      
+      <div className={`handle-upload ${uploadedImage ? 'uploaded' : ''}`}>
+      <label className='card'>
         <input type="file" onChange={handleImageUpload} />
-        <i class="fa-solid fa-plus"></i></label>
-        {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
-      </div>
+        <i className="fa-solid fa-plus"></i>
+      </label>
+      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
+    </div>
 
       
 
@@ -128,27 +129,49 @@ const trainStepsData = {
       <button className="search" onClick={handleGenerateClick}>Search</button>
       </div> 
 
+      <div className='info-section'>
       {Object.keys(contentData).map((key) => (
         <Information key={key} {...contentData[key]} />
       ))}
+      </div>
+
+      <div className='train-section'>
 
       <TrainSection 
       heading={trainStepsData.heading}
        text={trainStepsData.text}
       trainStepsData={trainStepsData}
       />
-      <button onClick={handleTrainClick}>Train</button>
+      <div className='train-upload'>
+      <div className={`handle-upload2 ${uploadedImage ? 'uploaded' : ''}`}>
+      <label className='card2'>
+        <input type="file" onChange={handleImageUpload} />
+        <i className="fa-solid fa-plus"></i>
+      </label>
+      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
+    </div>
+    
+       
+    <div className={`handle-upload3 ${uploadedImage ? 'uploaded' : ''}`}>
+      <label className='card3'>
+        <input type="file" onChange={handleImageUpload} />
+        <i className="fa-solid fa-plus"></i>
+      </label>
+      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
+    </div>
+    </div>
+
+      <div className='train-button'>
+      <button className="train" onClick={handleTrainClick}>Train</button>
+      </div>
+      </div>
+
       </div>
       <Footer />
         
     
  
-      {/* <div className='handle-upload'>
-
-       <input  className='card' type="file" onChange={handleImageUpload} /> <i class="fa-solid fa-plus"></i>
-      {uploadedImage && <img src={uploadedImage} alt="Uploaded" />}
-       
-  </div>*/}
+ 
 
     </div>
   )
