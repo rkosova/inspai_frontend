@@ -20,11 +20,13 @@
   color: white;
 }
 
+
 .topnav a.special-font {
     font-size: 40px;
     color: #F5D547;
     font-family: 'Diphylleia', serif;
 }
+
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
