@@ -46,7 +46,7 @@ const Home =()=> {
     //This is for the first parts of the website Header.jsx
     const sectionOne = {
       heading: "Find Inspiration with the Power of AI!",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      text: "Upload  or content",
       note: "Login or create account for limitless usage."
     }
   
@@ -66,7 +66,7 @@ const Home =()=> {
         },
         {
           id: 3,
-          title: "Explore loremipsum dummy text.",
+          title: "Explore vityle.",
           
         },
       ]
@@ -77,22 +77,22 @@ const Home =()=> {
     const contentData = {
       howItWorks: {
         heading: 'How Does It Work?',
-        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
+        text: 'Our intuitive image search fge to provide viilar results.'
       },
       similarStyles: {
         heading: 'Explore Similar Styles',
-        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
+        text: 'Results are based on visual yle. Enjoy discov images that resonate with your unique taste.'
       },
       optimizeStyle: {
         heading: "Optimize Your Uploads",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        text: "For optimal results, use Accepted formats: JPEG, PNG. Max file size: 5MB."
       }
       
     };
   // These are for the training part Train.jsx
   const trainStepsData = {
     heading: 'Train Our AI Model Here',
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    text: "By contribyles help train the model to recognize a diverse range of visual elements",
     steps: [
       { id: 1, step: 'Drag and drop or Upload an image that showcases a unique style.' },
       { id: 2, step: 'Press “Train” button to train our model' },

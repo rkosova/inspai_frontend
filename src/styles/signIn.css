@@ -8,8 +8,6 @@ a.special-font {
 .container {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-top: 200px;
     background: #fff;
     padding-bottom: 30px;
     width: 550px;
@@ -34,14 +32,14 @@ a.special-font {
 
 
 
-.inputs{
+.inputs-for-signin{
     margin-top: 55px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.input{
+.input-signin{
     display: flex;
     align-items: center;
     margin: auto;
@@ -51,11 +49,11 @@ a.special-font {
     border-radius: 6px;
 }
 
-.input img{
+.input-signin img{
     margin: 0px 30px;
 }
 
-.input input{
+.input-signin input{
     height: 50px;
     width: 400px;
     background: transparent;
@@ -78,7 +76,7 @@ a.special-font {
    text-decoration: underline;
 }
 
-.submit-signup{
+.submit-signin{
     margin: 20px auto;
 }
 

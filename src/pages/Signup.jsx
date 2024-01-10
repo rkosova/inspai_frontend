@@ -5,6 +5,8 @@ import '../styles/signUp.css'
 
 const Signup = () => {
   return (
+    <div className='home-logo'>
+    <a className="active special-font" href="/">InspAI</a>
   <div className='container'>
     <div className="header">
       <div className="text">Sign Up</div>
@@ -27,13 +29,11 @@ const Signup = () => {
         <img src={password_icon} alt="icon of a lock" />
         <input type="password" placeholder='Confirm Password'/>
       </div>
-      <div className="forgot-password">Forgot Password?  
-      <span>Click here!</span>
-      </div>
       <div className="submit-signup">
         <div className="submit">Sign Up</div>
       </div>
     </div>
+  </div>
   </div>
   )
 };
