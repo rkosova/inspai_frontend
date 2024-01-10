@@ -26,7 +26,7 @@ const Home =()=> {
     
     const handleGenerateClick = async (imageFile) => {
       if (uploadedImage){
-      // Simulate asynchronous AI processing (e.g., waiting for a response)
+      // Simulate asynchronous AI processing 
       console.log(imageFile)
       console.log('Simulating AI processing...');
       await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate a 2-second delay
@@ -46,7 +46,7 @@ const Home =()=> {
     //This is for the first parts of the website Header.jsx
     const sectionOne = {
       heading: "Find Inspiration with the Power of AI!",
-      text: "Upload images to find and create boards that match the same mood, style, or content as your original image.",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       note: "Login or create account for limitless usage."
     }
   
@@ -66,7 +66,7 @@ const Home =()=> {
         },
         {
           id: 3,
-          title: "Explore visually similar images based on style.",
+          title: "Explore loremipsum dummy text.",
           
         },
       ]
@@ -77,22 +77,22 @@ const Home =()=> {
     const contentData = {
       howItWorks: {
         heading: 'How Does It Work?',
-        text: 'Our intuitive image search feature analyzes the colors, composition, and style of your uploaded image to provide visually similar results.'
+        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
       },
       similarStyles: {
         heading: 'Explore Similar Styles',
-        text: 'Results are based on visual similarities such as color palette, composition, and overall style. Enjoy discovering new images that resonate with your unique taste.'
+        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
       },
       optimizeStyle: {
         heading: "Optimize Your Uploads",
-        text: "For optimal results, use high-quality images with clear style elements. Accepted formats: JPEG, PNG. Max file size: 5MB."
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       }
       
     };
   // These are for the training part Train.jsx
   const trainStepsData = {
     heading: 'Train Our AI Model Here',
-    text: 'By contributing your images, you play a vital role in enhancing the capabilities of our AI. Your unique styles help train the model to recognize a diverse range of visual elements',
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     steps: [
       { id: 1, step: 'Drag and drop or Upload an image that showcases a unique style.' },
       { id: 2, step: 'Press “Train” button to train our model' },
