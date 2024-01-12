@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
       {/*  REMINDER Do i need to put everything to home.jsx? */}
       <Route path='/' element={<Home/>} />
-      <Route path='/login' element={<Login/>} />
+      <Route path='/signin' element={<Login/>} />
       <Route path='/signup' element={<Signup/>} />
       </Routes>
     </div> 
